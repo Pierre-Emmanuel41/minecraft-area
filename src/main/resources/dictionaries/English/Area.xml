@@ -71,5 +71,13 @@
 			<code>RENAME_AREA__AREA_RENAMED</code>
 			<value>Area %s has been renamed as %s</value>
 		</message>
+		<message>
+			<code>SAVE_AREA__EXPLANATION</code>
+			<value>To save the current area</value>
+		</message>
+		<message>
+			<code>SAVE_AREA__AREA_SAVED</code>
+			<value>Area %s has been saved</value>
+		</message>
 	</messages>
 </dictionary>

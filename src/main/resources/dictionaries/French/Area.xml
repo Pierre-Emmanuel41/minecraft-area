@@ -68,5 +68,13 @@
 			<code>RENAME_AREA__AREA_RENAMED</code>
 			<value>L'area %s a été renommée %s</value>
 		</message>
+		<message>
+			<code>SAVE_AREA__EXPLANATION</code>
+			<value>Pour sauvegarder l'area actuelle</value>
+		</message>
+		<message>
+			<code>SAVE_AREA__AREA_SAVED</code>
+			<value>L'area %s a été sauvegardée</value>
+		</message>
 	</messages>
 </dictionary>
