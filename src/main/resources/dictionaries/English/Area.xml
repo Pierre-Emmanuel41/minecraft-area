@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+	<name>WorldStructure</name>
+	<version>1.0</version>
+	<locales>
+		<locale>en</locale>
+		<locale>en-EN</locale>
+		<locale>en-GB</locale>
+		<locale>en-UK</locale>
+		<locale>en-US</locale>
+		<locale>en-CA</locale>
+	</locales>
+	<messages>
+		<message>
+			<code>NEW_AREA__EXPLANATION</code>
+			<value>To create a new area</value>
+		</message>
+		<message>
+			<code>NEW_AREA__NAME_IS_MISSING</code>
+			<value>Cannot create a new area, the name is missing</value>
+		</message>
+		<message>
+			<code>NEW_AREA__NAME_ALREADY_TAKEN</code>
+			<value>An area %s already exists</value>
+		</message>
+		<message>
+			<code>NEW_AREA__AREA_CREATED</code>
+			<value>Area %s created</value>
+		</message>
+	</messages>
+</dictionary>
