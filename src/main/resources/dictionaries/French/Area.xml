@@ -52,5 +52,21 @@
 			<code>DIMENSION_AREA__DEFINED</code>
 			<value>Les dimensions de l'area %s sont X=%s Y=%s Z=%s</value>
 		</message>
+		<message>
+			<code>RENAME_AREA__EXPLANATION</code>
+			<value>Pour renommer une area</value>
+		</message>
+		<message>
+			<code>RENAME_AREA__NAME_IS_MISSING</code>
+			<value>Impossible de renommer l'area %s, il manque le nom</value>
+		</message>
+		<message>
+			<code>RENAME_AREA__NAME_ALREADY_TAKEN</code>
+			<value>Impossible de renommer area %s en %s, une area avec le même nom existe déjà</value>
+		</message>
+		<message>
+			<code>RENAME_AREA__AREA_RENAMED</code>
+			<value>L'area %s a été renommée %s</value>
+		</message>
 	</messages>
 </dictionary>

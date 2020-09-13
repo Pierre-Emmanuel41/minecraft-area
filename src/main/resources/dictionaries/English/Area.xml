@@ -55,5 +55,21 @@
 			<code>DIMENSION_AREA__DEFINED</code>
 			<value>The dimensions of area %s are defined as X=%s Y=%s Z=%s</value>
 		</message>
+		<message>
+			<code>RENAME_AREA__EXPLANATION</code>
+			<value>To rename an area</value>
+		</message>
+		<message>
+			<code>RENAME_AREA__NAME_IS_MISSING</code>
+			<value>Cannot rename the area %s, the name is missing</value>
+		</message>
+		<message>
+			<code>RENAME_AREA__NAME_ALREADY_TAKEN</code>
+			<value>Cannot rename area %s as %s, an area with the same name already exist</value>
+		</message>
+		<message>
+			<code>RENAME_AREA__AREA_RENAMED</code>
+			<value>Area %s has been renamed as %s</value>
+		</message>
 	</messages>
 </dictionary>
