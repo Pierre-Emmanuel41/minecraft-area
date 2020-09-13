@@ -76,5 +76,21 @@
 			<code>SAVE_AREA__AREA_SAVED</code>
 			<value>L'area %s a été sauvegardée</value>
 		</message>
+		<message>
+			<code>LIST_AREA__EXPLANATION</code>
+			<value>Pour afficher le nom des area existantes</value>
+		</message>
+		<message>
+			<code>LIST_AREA__NO_ELEMENT</code>
+			<value>Il n’existe aucune area</value>
+		</message>
+		<message>
+			<code>LIST_AREA__ONE_ELEMENT</code>
+			<value>Il existe une area :%n%s</value>
+		</message>
+		<message>
+			<code>LIST_AREA__SEVERAL_ELEMENTS</code>
+			<value>Liste des areas existants :%n%s</value>
+		</message>
 	</messages>
 </dictionary>
