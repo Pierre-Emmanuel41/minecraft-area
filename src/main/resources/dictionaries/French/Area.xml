@@ -14,7 +14,7 @@
 		</message>
 		<message>
 			<code>NEW_AREA__NAME_IS_MISSING</code>
-			<value>Impossible de créer une nouvelle area, Le nom est manquant</value>
+			<value>Impossible de créer une nouvelle area, il manque le nom</value>
 		</message>
 		<message>
 			<code>NEW_AREA__NAME_ALREADY_TAKEN</code>
@@ -23,6 +23,18 @@
 		<message>
 			<code>NEW_AREA__AREA_CREATED</code>
 			<value>Area %s créée</value>
+		</message>
+		<message>
+			<code>WORLD_AREA__EXPLANATION</code>
+			<value>Pour définir le monde dans lequel l'area est chargée</value>
+		</message>
+		<message>
+			<code>WORLD_AREA__WORLD_NAME_IS_MISSING</code>
+			<value>Impossible de définir le monde de l'area, il manque le nom</value>
+		</message>
+		<message>
+			<code>WORLD_AREA__WORLD_DEFINED</code>
+			<value>L'area %s sera chargée dans le monde %s</value>
 		</message>
 	</messages>
 </dictionary>

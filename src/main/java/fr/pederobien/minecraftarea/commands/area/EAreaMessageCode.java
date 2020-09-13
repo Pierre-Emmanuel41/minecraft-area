@@ -7,7 +7,10 @@ public enum EAreaMessageCode implements IMinecraftMessageCode {
 	// Code for command area
 
 	// Code for command new
-	NEW_AREA__EXPLANATION, NEW_AREA__NAME_IS_MISSING, NEW_AREA__NAME_ALREADY_TAKEN, NEW_AREA__AREA_CREATED;
+	NEW_AREA__EXPLANATION, NEW_AREA__NAME_IS_MISSING, NEW_AREA__NAME_ALREADY_TAKEN, NEW_AREA__AREA_CREATED,
+
+	// Code for command world
+	WORLD_AREA__EXPLANATION, WORLD_AREA__WORLD_NAME_IS_MISSING, WORLD_AREA__WORLD_DEFINED;
 
 	private Permission permission;
 

@@ -27,5 +27,17 @@
 			<code>NEW_AREA__AREA_CREATED</code>
 			<value>Area %s created</value>
 		</message>
+		<message>
+			<code>WORLD_AREA__EXPLANATION</code>
+			<value>To set the world in which the area is launched</value>
+		</message>
+		<message>
+			<code>WORLD_AREA__WORLD_NAME_IS_MISSING</code>
+			<value>Cannot set the area's world, the name is missing</value>
+		</message>
+		<message>
+			<code>WORLD_AREA__WORLD_DEFINED</code>
+			<value>The area %s will be launched in the %s</value>
+		</message>
 	</messages>
 </dictionary>
