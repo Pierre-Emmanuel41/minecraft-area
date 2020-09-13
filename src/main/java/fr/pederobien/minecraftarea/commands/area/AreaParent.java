@@ -4,13 +4,13 @@ import org.bukkit.plugin.Plugin;
 
 import fr.pederobien.minecraftarea.commands.AbstractAreaPersistenceEdition;
 import fr.pederobien.minecraftarea.interfaces.IArea;
+import fr.pederobien.minecraftarea.persistence.AreaPersistence;
 import fr.pederobien.minecraftgameplateform.interfaces.editions.IMapPersistenceEdition;
-import fr.pederobien.minecraftgameplateform.interfaces.element.persistence.IMinecraftPersistence;
 
 public class AreaParent extends AbstractAreaPersistenceEdition<IArea> {
 
-	public AreaParent(Plugin plugin, IMinecraftPersistence<IArea> persistence) {
-		super("area", EAreaMessageCode.AREA__EXPLANATION, plugin, persistence);
+	public AreaParent(Plugin plugin) {
+		super("area", EAreaMessageCode.AREA__EXPLANATION, plugin, AreaPersistence.getInstance());
 	}
 
 	@Override
