@@ -144,5 +144,13 @@
 			<code>LAUNCH_AREA__AREA_LAUNCHED</code>
 			<value>L'area %s a été chargé dans le monde %s en X=%s Y=%s Z=%s</value>
 		</message>
+		<message>
+			<code>DETAILS_AREA__EXPLANATION</code>
+			<value>Pour afficher les caractéristiques de l'area courante</value>
+		</message>
+		<message>
+			<code>DETAILS_AREA__ON_DETAILS</code>
+			<value>Caractéristiques de l'area courante :%n%s</value>
+		</message>
 	</messages>
 </dictionary>

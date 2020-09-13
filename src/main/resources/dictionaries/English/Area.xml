@@ -147,5 +147,13 @@
 			<code>LAUNCH_AREA__AREA_LAUNCHED</code>
 			<value>The area %s has been launched in the %s at X=%s Y=%s Z=%s</value>
 		</message>
+		<message>
+			<code>DETAILS_AREA__EXPLANATION</code>
+			<value>To display current area's characteristics</value>
+		</message>
+		<message>
+			<code>DETAILS_AREA__ON_DETAILS</code>
+			<value>Current area's characteristics :%n%s</value>
+		</message>
 	</messages>
 </dictionary>
