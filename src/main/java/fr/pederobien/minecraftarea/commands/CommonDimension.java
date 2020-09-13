@@ -11,7 +11,7 @@ import fr.pederobien.minecraftdictionary.interfaces.IMinecraftMessageCode;
 public abstract class CommonDimension<T extends IArea> extends AbstractAreaEdition<T> {
 
 	protected CommonDimension(IMinecraftMessageCode explanation) {
-		super(EAreaLabel.DIMENSION, explanation);
+		super(EAreaCommonLabel.DIMENSION, explanation);
 	}
 
 	/**
@@ -34,9 +34,9 @@ public abstract class CommonDimension<T extends IArea> extends AbstractAreaEditi
 			get().setDepth(getInt(depth));
 			onDimensionDefined(sender, get().getName(), get().getWidth(), get().getHeight(), get().getDepth());
 		} catch (IndexOutOfBoundsException e) {
-			sendMessageToSender(sender, EAreaMessageCode.COMMON_DIMENSION__MISSING_DIMENSION);
+			sendMessageToSender(sender, EAreaCommonMessageCode.COMMON_DIMENSION__MISSING_DIMENSION);
 		} catch (NumberFormatException e) {
-			sendMessageToSender(sender, EAreaMessageCode.COMMON_DIMENSION__BAD_DIMENSION_FORMAT);
+			sendMessageToSender(sender, EAreaCommonMessageCode.COMMON_DIMENSION__BAD_DIMENSION_FORMAT);
 		}
 		return true;
 	}

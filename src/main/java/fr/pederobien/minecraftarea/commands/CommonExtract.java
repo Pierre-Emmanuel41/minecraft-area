@@ -9,7 +9,7 @@ import fr.pederobien.minecraftdictionary.interfaces.IMinecraftMessageCode;
 public abstract class CommonExtract<T extends IArea> extends AbstractAreaEdition<T> {
 
 	protected CommonExtract(IMinecraftMessageCode explanation) {
-		super(EAreaLabel.EXTRACT, explanation);
+		super(EAreaCommonLabel.EXTRACT, explanation);
 	}
 
 	/**

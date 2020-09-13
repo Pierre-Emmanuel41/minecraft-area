@@ -14,7 +14,7 @@ import fr.pederobien.minecraftmanagers.WorldManager;
 public abstract class CommonWorld<T extends IArea> extends AbstractAreaEdition<T> {
 
 	protected CommonWorld(IMinecraftMessageCode explanation) {
-		super(EAreaLabel.WORLD, explanation);
+		super(EAreaCommonLabel.WORLD, explanation);
 	}
 
 	/**

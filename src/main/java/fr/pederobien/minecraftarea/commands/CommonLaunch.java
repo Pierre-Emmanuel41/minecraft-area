@@ -16,7 +16,7 @@ import fr.pederobien.minecraftmanagers.WorldManager;
 public abstract class CommonLaunch<T extends IArea> extends AbstractAreaEdition<T> {
 
 	public CommonLaunch(IMinecraftMessageCode explanation) {
-		super(EAreaLabel.LAUNCH, explanation);
+		super(EAreaCommonLabel.LAUNCH, explanation);
 	}
 
 	/**

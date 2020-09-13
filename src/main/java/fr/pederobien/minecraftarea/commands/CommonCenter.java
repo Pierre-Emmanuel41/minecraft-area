@@ -12,7 +12,7 @@ import fr.pederobien.minecraftgameplateform.dictionary.ECommonMessageCode;
 public abstract class CommonCenter<T extends IArea> extends AbstractAreaEdition<T> {
 
 	protected CommonCenter(IMinecraftMessageCode explanation) {
-		super(EAreaLabel.CENTER, explanation);
+		super(EAreaCommonLabel.CENTER, explanation);
 	}
 
 	/**

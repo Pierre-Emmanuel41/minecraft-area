@@ -9,7 +9,7 @@ import fr.pederobien.minecraftdictionary.interfaces.IMinecraftMessageCode;
 public abstract class CommonRemove<T extends IArea> extends AbstractAreaEdition<T> {
 
 	protected CommonRemove(IMinecraftMessageCode explanation) {
-		super(EAreaLabel.REMOVE, explanation);
+		super(EAreaCommonLabel.REMOVE, explanation);
 	}
 
 	/**

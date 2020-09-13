@@ -3,17 +3,17 @@ package fr.pederobien.minecraftarea.commands;
 import fr.pederobien.minecraftdictionary.impl.Permission;
 import fr.pederobien.minecraftdictionary.interfaces.IMinecraftMessageCode;
 
-public enum EAreaMessageCode implements IMinecraftMessageCode {
+public enum EAreaCommonMessageCode implements IMinecraftMessageCode {
 	// Code for command dimension
 	COMMON_DIMENSION__MISSING_DIMENSION, COMMON_DIMENSION__BAD_DIMENSION_FORMAT;
 
 	private Permission permission;
 
-	private EAreaMessageCode() {
+	private EAreaCommonMessageCode() {
 		this(Permission.OPERATORS);
 	}
 
-	private EAreaMessageCode(Permission permission) {
+	private EAreaCommonMessageCode(Permission permission) {
 		this.permission = permission;
 	}
 
