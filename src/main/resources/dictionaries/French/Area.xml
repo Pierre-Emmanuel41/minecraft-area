@@ -92,5 +92,21 @@
 			<code>LIST_AREA__SEVERAL_ELEMENTS</code>
 			<value>Liste des areas existants :%n%s</value>
 		</message>
+		<message>
+			<code>DELETE_AREA__EXPLANATION</code>
+			<value>Pour supprimer le fichier d'une area</value>
+		</message>
+		<message>
+			<code>DELETE_AREA__NAME_IS_MISSING</code>
+			<value>Impossible de supprimer une area, il manque le nom</value>
+		</message>
+		<message>
+			<code>DELETE_AREA__DIT_NOT_DELETE</code>
+			<value>La suppresion de l'area %s n'a pas pu s'effectuer correctement</value>
+		</message>
+		<message>
+			<code>DELETE_AREA__AREA_DELETED</code>
+			<value>Le fichier de l'area %s a été supprimé</value>
+		</message>
 	</messages>
 </dictionary>

@@ -95,5 +95,21 @@
 			<code>LIST_AREA__SEVERAL_ELEMENTS</code>
 			<value>List of existing areas :%n%s</value>
 		</message>
+		<message>
+			<code>DELETE_AREA__EXPLANATION</code>
+			<value>To delete a area's file</value>
+		</message>
+		<message>
+			<code>DELETE_AREA__NAME_IS_MISSING</code>
+			<value>Cannot delete an area, the name is missing</value>
+		</message>
+		<message>
+			<code>DELETE_AREA__DIT_NOT_DELETE</code>
+			<value>The deletion of area %s was not successful</value>
+		</message>
+		<message>
+			<code>DELETE_AREA__AREA_DELETED</code>
+			<value>The %s area's file has been deleted</value>
+		</message>
 	</messages>
 </dictionary>
