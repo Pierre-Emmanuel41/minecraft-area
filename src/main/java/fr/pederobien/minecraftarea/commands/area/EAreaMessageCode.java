@@ -5,6 +5,7 @@ import fr.pederobien.minecraftdictionary.interfaces.IMinecraftMessageCode;
 
 public enum EAreaMessageCode implements IMinecraftMessageCode {
 	// Code for command area
+	AREA__EXPLANATION,
 
 	// Code for command new
 	NEW_AREA__EXPLANATION, NEW_AREA__NAME_IS_MISSING, NEW_AREA__NAME_ALREADY_TAKEN, NEW_AREA__AREA_CREATED,
