@@ -44,5 +44,13 @@
 			<code>CENTER_AREA__CENTER_DEFINED</code>
 			<value>Le centre de l'area %s est défini en X=%s Y=%s Z=%s</value>
 		</message>
+		<message>
+			<code>DIMENSION_AREA__EXPLANATION</code>
+			<value>Pour définir les dimensions de l'area</value>
+		</message>
+		<message>
+			<code>DIMENSION_AREA__DEFINED</code>
+			<value>Les dimensions de l'area %s sont X=%s Y=%s Z=%s</value>
+		</message>
 	</messages>
 </dictionary>

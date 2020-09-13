@@ -13,7 +13,10 @@ public enum EAreaMessageCode implements IMinecraftMessageCode {
 	WORLD_AREA__EXPLANATION, WORLD_AREA__WORLD_NAME_IS_MISSING, WORLD_AREA__WORLD_DEFINED,
 
 	// Code for command center
-	CENTER_AREA__EXPLANATION, CENTER_AREA__CENTER_DEFINED;
+	CENTER_AREA__EXPLANATION, CENTER_AREA__CENTER_DEFINED,
+
+	// Code for command dimension
+	DIMENSION_AREA__EXPLANATION, DIMENSION_AREA__DEFINED;
 
 	private Permission permission;
 
