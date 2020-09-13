@@ -116,5 +116,13 @@
 			<code>EXTRACT_AREA__AREA_EXTRACTED</code>
 			<value>Les blocs de l'area %s ont été extraits</value>
 		</message>
+		<message>
+			<code>REMOVE_AREA__EXPLANATION</code>
+			<value>Pour enlever l'area du monde</value>
+		</message>
+		<message>
+			<code>REMOVE_AREA__AREA_REMOVED</code>
+			<value>L'area %s a été enlevé du monde %s</value>
+		</message>
 	</messages>
 </dictionary>

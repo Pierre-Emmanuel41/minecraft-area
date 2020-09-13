@@ -25,6 +25,7 @@ public abstract class CommonRemove<T extends IArea> extends AbstractAreaEdition<
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		get().remove();
 		onRemoved(sender, get().getName(), get().getWorld().getName());
+		get().getListener().setActivated(false);
 		return true;
 	}
 }
