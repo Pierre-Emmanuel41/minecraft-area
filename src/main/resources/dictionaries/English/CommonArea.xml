@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+	<name>WorldStructure</name>
+	<version>1.0</version>
+	<locales>
+		<locale>en</locale>
+		<locale>en-EN</locale>
+		<locale>en-GB</locale>
+		<locale>en-UK</locale>
+		<locale>en-US</locale>
+		<locale>en-CA</locale>
+	</locales>
+	<messages>
+		<message>
+			<code>COMMON_DIMENSION__BAD_DIMENSION_FORMAT</code>
+			<value>Bad dimensions format, they should be integer</value>
+		</message>
+		<message>
+			<code>COMMON_DIMENSION__MISSING_DIMENSION</code>
+			<value>Cannot set dimensions, width &lt;X&gt; , height &lt;Y&gt; or depth &lt;Z&gt; is missing</value>
+		</message>
+	</messages>
+</dictionary>

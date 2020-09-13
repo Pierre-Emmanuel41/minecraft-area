@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+	<name>WorldStructure</name>
+	<version>1.0</version>
+	<locales>
+		<locale>fr</locale>
+		<locale>fr-FR</locale>
+		<locale>fr-CA</locale>
+	</locales>
+	<messages>
+		<message>
+			<code>COMMON_DIMENSION__BAD_DIMENSION_FORMAT</code>
+			<value>Mauvais format des dimensions, elles doivent être des entiers</value>
+		</message>
+		<message>
+			<code>COMMON_DIMENSION__MISSING_DIMENSION</code>
+			<value>Impossible de définir les dimensions, il manque la largeur &lt;X&gt; ou la hauteur &lt;Y&gt; ou la profondeur &lt;Z&gt;</value>
+		</message>
+	</messages>
+</dictionary>
