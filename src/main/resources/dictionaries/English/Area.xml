@@ -39,5 +39,13 @@
 			<code>WORLD_AREA__WORLD_DEFINED</code>
 			<value>The area %s will be launched in the %s</value>
 		</message>
+		<message>
+			<code>CENTER_AREA__EXPLANATION</code>
+			<value>To set area's center</value>
+		</message>
+		<message>
+			<code>CENTER_AREA__CENTER_DEFINED</code>
+			<value>The %s area's center is defined in X=%s Y=%s Z=%s</value>
+		</message>
 	</messages>
 </dictionary>

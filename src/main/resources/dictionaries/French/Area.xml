@@ -36,5 +36,13 @@
 			<code>WORLD_AREA__WORLD_DEFINED</code>
 			<value>L'area %s sera chargée dans le monde %s</value>
 		</message>
+		<message>
+			<code>CENTER_AREA__EXPLANATION</code>
+			<value>Pour définir le centre de l'area</value>
+		</message>
+		<message>
+			<code>CENTER_AREA__CENTER_DEFINED</code>
+			<value>Le centre de l'area %s est défini en X=%s Y=%s Z=%s</value>
+		</message>
 	</messages>
 </dictionary>
