@@ -108,5 +108,13 @@
 			<code>DELETE_AREA__AREA_DELETED</code>
 			<value>Le fichier de l'area %s a été supprimé</value>
 		</message>
+		<message>
+			<code>EXTRACT_AREA__EXPLANATION</code>
+			<value>Pour extraire du monde les blocs de l'area</value>
+		</message>
+		<message>
+			<code>EXTRACT_AREA__AREA_EXTRACTED</code>
+			<value>Les blocs de l'area %s ont été extraits</value>
+		</message>
 	</messages>
 </dictionary>

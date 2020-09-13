@@ -111,5 +111,13 @@
 			<code>DELETE_AREA__AREA_DELETED</code>
 			<value>The %s area's file has been deleted</value>
 		</message>
+		<message>
+			<code>EXTRACT_AREA__EXPLANATION</code>
+			<value>To extract from the world the area's blocks</value>
+		</message>
+		<message>
+			<code>EXTRACT_AREA__AREA_EXTRACTED</code>
+			<value>The blocks of area %s have been extracted</value>
+		</message>
 	</messages>
 </dictionary>
