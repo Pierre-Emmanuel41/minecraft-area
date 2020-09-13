@@ -24,7 +24,7 @@ public abstract class CommonLaunch<T extends IArea> extends AbstractAreaEdition<
 	 * 
 	 * @param sender The entity (generally a player) to send messages.
 	 */
-	protected abstract void onNoStructure(CommandSender sender);
+	protected abstract void onNoArea(CommandSender sender);
 
 	/**
 	 * Method called when any world name has been furnished.
@@ -64,7 +64,7 @@ public abstract class CommonLaunch<T extends IArea> extends AbstractAreaEdition<
 		// Launching the current structure
 		case 0:
 			if (get() == null) {
-				onNoStructure(sender);
+				onNoArea(sender);
 				return false;
 			}
 			get().launch();

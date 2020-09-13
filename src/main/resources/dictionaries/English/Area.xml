@@ -127,5 +127,25 @@
 			<code>REMOVE_AREA__AREA_REMOVED</code>
 			<value>The area %s has been removed from the %s</value>
 		</message>
+		<message>
+			<code>LAUNCH_AREA__EXPLANATION</code>
+			<value>To launch an area in the world</value>
+		</message>
+		<message>
+			<code>LAUNCH_AREA__NO_CURRENT_AREA</code>
+			<value>There is no current area</value>
+		</message>
+		<message>
+			<code>LAUNCH_AREA__WORLD_IS_MISSING</code>
+			<value>Cannot launch area %s, the world's name is missing</value>
+		</message>
+		<message>
+			<code>LAUNCH_AREA__AREA_DOES_NOT_EXIST</code>
+			<value>Cannot launch the area %s, this area does not exist</value>
+		</message>
+		<message>
+			<code>LAUNCH_AREA__AREA_LAUNCHED</code>
+			<value>The area %s has been launched in the %s at X=%s Y=%s Z=%s</value>
+		</message>
 	</messages>
 </dictionary>

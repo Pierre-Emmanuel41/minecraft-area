@@ -124,5 +124,25 @@
 			<code>REMOVE_AREA__AREA_REMOVED</code>
 			<value>L'area %s a été enlevé du monde %s</value>
 		</message>
+		<message>
+			<code>LAUNCH_AREA__EXPLANATION</code>
+			<value>Pour charger une area dans le monde</value>
+		</message>
+		<message>
+			<code>LAUNCH_AREA__NO_CURRENT_AREA</code>
+			<value>Il n'y a pas d'area courante</value>
+		</message>
+		<message>
+			<code>LAUNCH_AREA__WORLD_IS_MISSING</code>
+			<value>Impossible de charger l'area %s, il manque le nom du monde</value>
+		</message>
+		<message>
+			<code>LAUNCH_AREA__AREA_DOES_NOT_EXIST</code>
+			<value>Impossible de charger l'area %s, cette area n’existe pas</value>
+		</message>
+		<message>
+			<code>LAUNCH_AREA__AREA_LAUNCHED</code>
+			<value>L'area %s a été chargé dans le monde %s en X=%s Y=%s Z=%s</value>
+		</message>
 	</messages>
 </dictionary>
