@@ -15,15 +15,17 @@ public class AreaPlugin extends JavaPlugin {
 	public void onEnable() {
 		Plateform.getPluginHelper().register(this);
 
+		new AreaCommand(this);
+
 		registerDictionaries();
 	}
 
 	private void registerDictionaries() {
 		// Registering French dictionaries
-		registerDictionary("French", "Chat.xml");
+		registerDictionary("French", "CommonArea.xml", "Area.xml");
 
 		// Registering English dictionaries
-		registerDictionary("English", "Chat.xml");
+		registerDictionary("English", "CommonArea.xml", "Area.xml");
 	}
 
 	private void registerDictionary(String parent, String... dictionaryNames) {
