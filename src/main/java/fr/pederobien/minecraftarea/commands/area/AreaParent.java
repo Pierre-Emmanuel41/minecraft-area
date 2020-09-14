@@ -35,7 +35,7 @@ public class AreaParent extends AbstractAreaPersistenceEdition<IArea> {
 
 	@Override
 	protected IMapPersistenceEdition<IArea> getLaunchEdition() {
-		return AreaEditionFactory.launchArea();
+		return AreaEditionFactory.launchArea().setModifiable(false);
 	}
 
 	@Override
