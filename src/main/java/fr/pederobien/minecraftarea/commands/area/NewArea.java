@@ -17,12 +17,12 @@ public class NewArea extends CommonNew<IArea> {
 
 	@Override
 	protected void onNameAlreadyTaken(CommandSender sender, String name) {
-		sendMessageToSender(sender, EAreaMessageCode.NEW_AREA__NAME_ALREADY_TAKEN, name);
+		sendSynchro(sender, EAreaMessageCode.NEW_AREA__NAME_ALREADY_TAKEN, name);
 	}
 
 	@Override
 	protected void onNameIsMissing(CommandSender sender) {
-		sendMessageToSender(sender, EAreaMessageCode.NEW_AREA__NAME_IS_MISSING);
+		sendSynchro(sender, EAreaMessageCode.NEW_AREA__NAME_IS_MISSING);
 	}
 
 	@Override
@@ -32,7 +32,7 @@ public class NewArea extends CommonNew<IArea> {
 
 	@Override
 	protected void onCreated(CommandSender sender, String name) {
-		sendMessageToSender(sender, EAreaMessageCode.NEW_AREA__AREA_CREATED, name);
+		sendSynchro(sender, EAreaMessageCode.NEW_AREA__AREA_CREATED, name);
 		setAllAvailable();
 	}
 

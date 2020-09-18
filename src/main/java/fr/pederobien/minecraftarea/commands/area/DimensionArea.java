@@ -13,6 +13,6 @@ public class DimensionArea extends CommonDimension<IArea> {
 
 	@Override
 	protected void onDimensionDefined(CommandSender sender, String name, int width, int height, int depth) {
-		sendMessageToSender(sender, EAreaMessageCode.DIMENSION_AREA__DEFINED, name, width, height, depth);
+		sendSynchro(sender, EAreaMessageCode.DIMENSION_AREA__DEFINED, name, width, height, depth);
 	}
 }

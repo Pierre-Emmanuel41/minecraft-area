@@ -119,7 +119,7 @@ public abstract class CommonLaunch<T extends IArea> extends AbstractAreaEdition<
 				y = args[3];
 				z = args[4];
 			} catch (IndexOutOfBoundsException e) {
-				sendMessageToSender(sender, ECommonMessageCode.COMMON_MISSING_COORDINATES);
+				sendSynchro(sender, ECommonMessageCode.COMMON_MISSING_COORDINATES);
 				return false;
 			}
 			getPersistence().save();
@@ -132,10 +132,10 @@ public abstract class CommonLaunch<T extends IArea> extends AbstractAreaEdition<
 			onStructureDoesNotExist(sender, name);
 			return false;
 		} catch (WorldAreaNotFoundException e) {
-			sendMessageToSender(sender, ECommonMessageCode.COMMON_WORLD_DOES_NOT_EXIST, world);
+			sendSynchro(sender, ECommonMessageCode.COMMON_WORLD_DOES_NOT_EXIST, world);
 			return false;
 		} catch (NumberFormatException e) {
-			sendMessageToSender(sender, ECommonMessageCode.COMMON_BAD_INTEGER_FORMAT);
+			sendSynchro(sender, ECommonMessageCode.COMMON_BAD_INTEGER_FORMAT);
 			return false;
 		}
 		return true;

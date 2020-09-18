@@ -13,16 +13,16 @@ public class ListArea extends CommonList<IArea> {
 
 	@Override
 	protected void onNoElement(CommandSender sender) {
-		sendMessageToSender(sender, EAreaMessageCode.LIST_AREA__NO_ELEMENT);
+		sendSynchro(sender, EAreaMessageCode.LIST_AREA__NO_ELEMENT);
 	}
 
 	@Override
 	protected void onOneElement(CommandSender sender, String name) {
-		sendMessageToSender(sender, EAreaMessageCode.LIST_AREA__ONE_ELEMENT, name);
+		sendSynchro(sender, EAreaMessageCode.LIST_AREA__ONE_ELEMENT, name);
 	}
 
 	@Override
 	protected void onSeveralElement(CommandSender sender, String names) {
-		sendMessageToSender(sender, EAreaMessageCode.LIST_AREA__SEVERAL_ELEMENTS, names);
+		sendSynchro(sender, EAreaMessageCode.LIST_AREA__SEVERAL_ELEMENTS, names);
 	}
 }

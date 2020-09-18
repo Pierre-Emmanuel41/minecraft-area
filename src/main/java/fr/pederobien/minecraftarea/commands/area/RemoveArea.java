@@ -13,6 +13,6 @@ public class RemoveArea extends CommonRemove<IArea> {
 
 	@Override
 	protected void onRemoved(CommandSender sender, String name, String world) {
-		sendMessageToSender(sender, EAreaMessageCode.REMOVE_AREA__AREA_REMOVED, name, world);
+		sendSynchro(sender, EAreaMessageCode.REMOVE_AREA__AREA_REMOVED, name, world);
 	}
 }

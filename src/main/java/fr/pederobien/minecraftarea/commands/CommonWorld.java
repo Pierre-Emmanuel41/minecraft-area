@@ -44,7 +44,7 @@ public abstract class CommonWorld<T extends IArea> extends AbstractAreaEdition<T
 			onWorldNameIsMissing(sender);
 			return false;
 		} catch (WorldAreaNotFoundException e) {
-			sendMessageToSender(sender, ECommonMessageCode.COMMON_WORLD_DOES_NOT_EXIST, name);
+			sendSynchro(sender, ECommonMessageCode.COMMON_WORLD_DOES_NOT_EXIST, name);
 			return false;
 		}
 		return true;

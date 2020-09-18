@@ -13,11 +13,11 @@ public class WorldArea extends CommonWorld<IArea> {
 
 	@Override
 	protected void onWorldNameIsMissing(CommandSender sender) {
-		sendMessageToSender(sender, EAreaMessageCode.WORLD_AREA__WORLD_NAME_IS_MISSING);
+		sendSynchro(sender, EAreaMessageCode.WORLD_AREA__WORLD_NAME_IS_MISSING);
 	}
 
 	@Override
 	protected void onWorldDefined(CommandSender sender, String name, String worldName) {
-		sendMessageToSender(sender, EAreaMessageCode.WORLD_AREA__WORLD_DEFINED, name, worldName);
+		sendSynchro(sender, EAreaMessageCode.WORLD_AREA__WORLD_DEFINED, name, worldName);
 	}
 }

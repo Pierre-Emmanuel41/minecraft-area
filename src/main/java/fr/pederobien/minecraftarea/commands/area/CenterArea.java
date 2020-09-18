@@ -13,6 +13,6 @@ public class CenterArea extends CommonCenter<IArea> {
 
 	@Override
 	protected void onCenterDefined(CommandSender sender, String name, int x, int y, int z) {
-		sendMessageToSender(sender, EAreaMessageCode.CENTER_AREA__CENTER_DEFINED, name, x, y, z);
+		sendSynchro(sender, EAreaMessageCode.CENTER_AREA__CENTER_DEFINED, name, x, y, z);
 	}
 }

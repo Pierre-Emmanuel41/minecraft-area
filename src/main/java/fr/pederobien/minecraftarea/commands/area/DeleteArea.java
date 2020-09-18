@@ -13,16 +13,16 @@ public class DeleteArea extends CommonDelete<IArea> {
 
 	@Override
 	protected void onDidNotDelete(CommandSender sender, String name) {
-		sendMessageToSender(sender, EAreaMessageCode.DELETE_AREA__DIT_NOT_DELETE, name);
+		sendSynchro(sender, EAreaMessageCode.DELETE_AREA__DIT_NOT_DELETE, name);
 	}
 
 	@Override
 	protected void onDeleted(CommandSender sender, String name) {
-		sendMessageToSender(sender, EAreaMessageCode.DELETE_AREA__AREA_DELETED, name);
+		sendSynchro(sender, EAreaMessageCode.DELETE_AREA__AREA_DELETED, name);
 	}
 
 	@Override
 	protected void onNameIsMissing(CommandSender sender) {
-		sendMessageToSender(sender, EAreaMessageCode.DELETE_AREA__NAME_IS_MISSING);
+		sendSynchro(sender, EAreaMessageCode.DELETE_AREA__NAME_IS_MISSING);
 	}
 }

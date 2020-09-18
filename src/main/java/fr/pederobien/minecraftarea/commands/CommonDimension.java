@@ -34,9 +34,9 @@ public abstract class CommonDimension<T extends IArea> extends AbstractAreaEditi
 			get().setDepth(getInt(depth));
 			onDimensionDefined(sender, get().getName(), get().getWidth(), get().getHeight(), get().getDepth());
 		} catch (IndexOutOfBoundsException e) {
-			sendMessageToSender(sender, EAreaCommonMessageCode.COMMON_DIMENSION__MISSING_DIMENSION);
+			sendSynchro(sender, EAreaCommonMessageCode.COMMON_DIMENSION__MISSING_DIMENSION);
 		} catch (NumberFormatException e) {
-			sendMessageToSender(sender, EAreaCommonMessageCode.COMMON_DIMENSION__BAD_DIMENSION_FORMAT);
+			sendSynchro(sender, EAreaCommonMessageCode.COMMON_DIMENSION__BAD_DIMENSION_FORMAT);
 		}
 		return true;
 	}

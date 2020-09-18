@@ -13,6 +13,6 @@ public class ExtractArea extends CommonExtract<IArea> {
 
 	@Override
 	protected void onExtracted(CommandSender sender, String name) {
-		sendMessageToSender(sender, EAreaMessageCode.EXTRACT_AREA__AREA_EXTRACTED, name);
+		sendSynchro(sender, EAreaMessageCode.EXTRACT_AREA__AREA_EXTRACTED, name);
 	}
 }

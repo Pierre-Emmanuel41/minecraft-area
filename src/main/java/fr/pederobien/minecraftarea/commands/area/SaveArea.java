@@ -13,6 +13,6 @@ public class SaveArea extends CommonSave<IArea> {
 
 	@Override
 	protected void onSave(CommandSender sender, String name) {
-		sendMessageToSender(sender, EAreaMessageCode.SAVE_AREA__AREA_SAVED, name);
+		sendSynchro(sender, EAreaMessageCode.SAVE_AREA__AREA_SAVED, name);
 	}
 }
