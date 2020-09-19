@@ -2,6 +2,7 @@ main: fr.pederobien.minecraftarea.AreaPlugin
 name: minecraft-area
 version: 1.0-SNAPSHOT
 api-version: 1.13
+depend: [minecraft-game-plateform]
 
 description:
 commands:
