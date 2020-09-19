@@ -19,5 +19,29 @@
 			<code>COMMON_DIMENSION__MISSING_DIMENSION</code>
 			<value>Cannot set dimensions, width &lt;X&gt; , height &lt;Y&gt; or depth &lt;Z&gt; is missing</value>
 		</message>
+		<message>
+			<code>COMMON_START_LAUNCH</code>
+			<value>Launching %s blocks</value>
+		</message>
+		<message>
+			<code>COMMON_LAUNCH_PROGRESS</code>
+			<value>Launching... %s%%</value>
+		</message>
+		<message>
+			<code>COMMON_START_EXTRACT</code>
+			<value>Extracting %s blocks</value>
+		</message>
+		<message>
+			<code>COMMON_EXTRACT_PROGRESS</code>
+			<value>Extracting... %s%%</value>
+		</message>
+		<message>
+			<code>COMMON_START_REMOVE</code>
+			<value>Removing %s blocks</value>
+		</message>
+		<message>
+			<code>COMMON_REMOVE_PROGRESS</code>
+			<value>Removing... %s%%</value>
+		</message>
 	</messages>
 </dictionary>

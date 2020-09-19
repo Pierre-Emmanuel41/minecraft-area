@@ -9,12 +9,15 @@ import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 
+import fr.pederobien.minecraftarea.commands.EAreaCommonMessageCode;
 import fr.pederobien.minecraftarea.exceptions.DimensionAreaException;
 import fr.pederobien.minecraftarea.exceptions.WorldAreaNotFoundException;
 import fr.pederobien.minecraftarea.interfaces.IArea;
 import fr.pederobien.minecraftarea.interfaces.IAreaBlock;
 import fr.pederobien.minecraftdevelopmenttoolkit.utils.DisplayHelper;
 import fr.pederobien.minecraftgameplateform.impl.element.AbstractNominable;
+import fr.pederobien.minecraftmanagers.EColor;
+import fr.pederobien.minecraftmanagers.MessageManager.DisplayOption;
 import fr.pederobien.minecraftmanagers.WorldManager;
 
 public abstract class AbstractArea extends AbstractNominable implements IArea {
@@ -63,30 +66,69 @@ public abstract class AbstractArea extends AbstractNominable implements IArea {
 	@Override
 	public void extract() {
 		blocks.clear();
+		int size = getWidth() * getHeight() * getDepth();
+		sendNotSynchro(EAreaCommonMessageCode.COMMON_START_EXTRACT, DisplayOption.CONSOLE, EColor.GOLD, size);
 
+		int progress = 0, percentage = 0;
 		int maxWidth = getWidth() / 2, minWidth = -getWidth() / 2, maxDepth = getDepth() / 2, minDepth = -getDepth() / 2;
+
+		// Sending 0% otherwise never sent.
+		sendNotSynchro(EAreaCommonMessageCode.COMMON_EXTRACT_PROGRESS, DisplayOption.ACTION_BAR, EColor.GOLD, 0);
 		for (int y = 0; y < getHeight(); y++)
 			for (int x = minWidth; x <= maxWidth; x++)
-				for (int z = minDepth; z <= maxDepth; z++)
+				for (int z = minDepth; z <= maxDepth; z++) {
 					blocks.add(new AreaBlock(x, y, z, getBlockFromCenter(x, y, z).getBlockData()));
+					int current = (int) (((double) progress / (double) size) * 100);
+					if (current != percentage) {
+						percentage = current;
+						sendNotSynchro(EAreaCommonMessageCode.COMMON_EXTRACT_PROGRESS, DisplayOption.ACTION_BAR, EColor.GOLD, percentage);
+					}
+					progress++;
+				}
 	}
 
 	@Override
 	public void launch() {
 		before.clear();
+		sendNotSynchro(EAreaCommonMessageCode.COMMON_START_LAUNCH, DisplayOption.CONSOLE, EColor.GOLD, blocks.size());
+		int progress = 0, percentage = 0;
+
+		// Sending 0% otherwise never sent.
+		sendNotSynchro(EAreaCommonMessageCode.COMMON_LAUNCH_PROGRESS, DisplayOption.ACTION_BAR, EColor.GOLD, 0);
 		for (IAreaBlock block : blocks) {
 			before.add(new AreaBlock(block.getX(), block.getY(), block.getZ(), getBlockFromCenter(block.getX(), block.getY(), block.getZ()).getBlockData()));
 			updateWorldBlock(block);
+			int current = (int) (((double) progress / (double) blocks.size()) * 100);
+			if (current != percentage) {
+				percentage = current;
+				sendNotSynchro(EAreaCommonMessageCode.COMMON_LAUNCH_PROGRESS, DisplayOption.ACTION_BAR, EColor.GOLD, percentage);
+			}
+			progress++;
 		}
+
 		isRemoved = false;
 	}
 
 	@Override
 	public void remove() {
+		sendNotSynchro(EAreaCommonMessageCode.COMMON_START_REMOVE, DisplayOption.CONSOLE, EColor.GOLD, blocks.size());
+		int progress = 0, percentage = 0;
+
 		if (before.isEmpty())
 			for (IAreaBlock block : blocks)
 				before.add(new AreaBlock(block.getX(), block.getX(), block.getX(), Material.AIR.createBlockData()));
-		before.forEach(block -> updateWorldBlock(block));
+
+		// Sending 0% otherwise never sent.
+		sendNotSynchro(EAreaCommonMessageCode.COMMON_REMOVE_PROGRESS, DisplayOption.ACTION_BAR, EColor.GOLD, 0);
+		for (IAreaBlock block : before) {
+			updateWorldBlock(block);
+			int current = (int) (((double) progress / (double) blocks.size()) * 100);
+			if (current != percentage) {
+				percentage = current;
+				sendNotSynchro(EAreaCommonMessageCode.COMMON_REMOVE_PROGRESS, DisplayOption.ACTION_BAR, EColor.GOLD, percentage);
+			}
+			progress++;
+		}
 		isRemoved = true;
 	}
 

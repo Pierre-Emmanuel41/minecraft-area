@@ -16,5 +16,29 @@
 			<code>COMMON_DIMENSION__MISSING_DIMENSION</code>
 			<value>Impossible de définir les dimensions, il manque la largeur &lt;X&gt; ou la hauteur &lt;Y&gt; ou la profondeur &lt;Z&gt;</value>
 		</message>
+		<message>
+			<code>COMMON_START_LAUNCH</code>
+			<value>Chargement de %s blocs</value>
+		</message>
+		<message>
+			<code>COMMON_LAUNCH_PROGRESS</code>
+			<value>Chargement... %s%%</value>
+		</message>
+		<message>
+			<code>COMMON_START_EXTRACT</code>
+			<value>Extraction de %s blocs</value>
+		</message>
+		<message>
+			<code>COMMON_EXTRACT_PROGRESS</code>
+			<value>Extraction... %s%%</value>
+		</message>
+		<message>
+			<code>COMMON_START_REMOVE</code>
+			<value>Suppression de %s blocs</value>
+		</message>
+		<message>
+			<code>COMMON_REMOVE_PROGRESS</code>
+			<value>Suppression... %s%%</value>
+		</message>
 	</messages>
 </dictionary>

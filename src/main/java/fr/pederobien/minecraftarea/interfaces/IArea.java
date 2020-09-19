@@ -7,10 +7,11 @@ import org.bukkit.block.Block;
 
 import fr.pederobien.minecraftarea.exceptions.DimensionAreaException;
 import fr.pederobien.minecraftarea.exceptions.WorldAreaNotFoundException;
+import fr.pederobien.minecraftgameplateform.interfaces.editions.IPlateformCodeSender;
 import fr.pederobien.minecraftgameplateform.interfaces.element.IEventListener;
 import fr.pederobien.minecraftgameplateform.interfaces.element.INominable;
 
-public interface IArea extends INominable {
+public interface IArea extends INominable, IPlateformCodeSender {
 
 	/**
 	 * @return The world in which this structure should be launched or extracted.
