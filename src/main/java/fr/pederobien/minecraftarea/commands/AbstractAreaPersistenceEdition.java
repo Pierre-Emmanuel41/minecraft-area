@@ -17,7 +17,7 @@ public abstract class AbstractAreaPersistenceEdition<T extends IArea> extends Ab
 		addEdition(getCenterEdition());
 		addEdition(getDimensionEdition());
 		addEdition(getExtractEdition());
-		addEdition(getLaunchEdition());
+		addEdition(getLaunchEdition().setModifiable(false));
 		addEdition(getRemoveEdition());
 	}
 
