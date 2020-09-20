@@ -81,11 +81,11 @@ public abstract class CommonLaunch<T extends IArea> extends AbstractAreaEdition<
 		List<String> worlds = WorldManager.getWorldNormalisedNames();
 		switch (args.length) {
 		case 1:
-			return filter(existingStructures.stream(), args[0]);
+			return filter(existingStructures.stream(), args);
 		case 2:
-			return filter(check(args[0], e -> existingStructures.contains(e), worlds).stream(), args[args.length - 1]);
+			return filter(check(args[0], e -> existingStructures.contains(e), worlds).stream(), args);
 		default:
-			return filter(check(args[1], e -> worlds.contains(e), checkCoordinates(extract(args, 2))).stream(), args[args.length - 1]);
+			return filter(check(args[1], e -> worlds.contains(e), checkCoordinates(extract(args, 2))).stream(), args);
 		}
 	}
 
