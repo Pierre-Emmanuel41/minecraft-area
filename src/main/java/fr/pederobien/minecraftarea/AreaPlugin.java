@@ -12,8 +12,8 @@ import fr.pederobien.minecraftgameplateform.interfaces.commands.IParentCommand;
 import fr.pederobien.minecraftgameplateform.utils.Plateform;
 
 public class AreaPlugin extends JavaPlugin {
-	private static IParentCommand<IArea> areaCommand;
 	private static Plugin plugin;
+	private static IParentCommand<IArea> areaCommand;
 
 	/**
 	 * @return The plugin associated to this area plugin.
