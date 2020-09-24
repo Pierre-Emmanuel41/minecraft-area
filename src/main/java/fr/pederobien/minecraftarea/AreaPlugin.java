@@ -23,7 +23,7 @@ public class AreaPlugin extends JavaPlugin {
 	}
 
 	/**
-	 * @return The current hunger game configuration for this plugin.
+	 * @return The current area for this plugin.
 	 */
 	public static IArea getCurrentArea() {
 		return areaCommand.getParent().get();
