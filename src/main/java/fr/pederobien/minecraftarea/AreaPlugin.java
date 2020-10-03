@@ -40,11 +40,12 @@ public class AreaPlugin extends JavaPlugin {
 	}
 
 	private void registerDictionaries() {
+		String[] dictionaries = new String[] { "CommonArea.xml", "Area.xml" };
 		// Registering French dictionaries
-		registerDictionary("French", "CommonArea.xml", "Area.xml");
+		registerDictionary("French", dictionaries);
 
 		// Registering English dictionaries
-		registerDictionary("English", "CommonArea.xml", "Area.xml");
+		registerDictionary("English", dictionaries);
 	}
 
 	private void registerDictionary(String parent, String... dictionaryNames) {
